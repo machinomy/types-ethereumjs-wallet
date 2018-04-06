@@ -1,0 +1,21 @@
+{
+  "name": "@machinomy/types-ethereumjs-wallet",
+  "version": "0.0.3",
+  "description": "TypeScript declaration for ethereumjs-wallet",
+  "main": "index.d.ts",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machinomy/types-ethereumjs-wallet.git"
+  },
+  "author": "Sergey Ukustov <sergey.ukustov@machinomy.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/machinomy/types-ethereumjs-wallet/issues"
+  },
+  "homepage": "https://github.com/machinomy/types-ethereumjs-wallet#readme",
+  "dependencies": {
+    "@machinomy/types-buffer": "^0.0.4",
+    "buffer": "^5.1.0"
+  }
+}
