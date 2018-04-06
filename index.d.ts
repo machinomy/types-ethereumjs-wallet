@@ -18,9 +18,5 @@ declare module "ethereumjs-wallet/hdkey" {
     getWallet(): Wallet
   }
 
-  function fromMasterSeed(seed: string): EthereumHDKey
-
-  export = {
-    fromMasterSeed: fromMasterSeed
-  }
+  export function fromMasterSeed(seed: string): EthereumHDKey
 }
