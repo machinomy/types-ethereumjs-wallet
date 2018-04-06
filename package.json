@@ -1,6 +1,6 @@
 {
   "name": "@machinomy/types-ethereumjs-wallet",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "TypeScript declaration for ethereumjs-wallet",
   "main": "index.d.ts",
   "types": "index.d.ts",
@@ -15,7 +15,6 @@
   },
   "homepage": "https://github.com/machinomy/types-ethereumjs-wallet#readme",
   "dependencies": {
-    "@machinomy/types-buffer": "^0.0.4",
-    "buffer": "^5.1.0"
+    "@types/node": "^9.6.2"
   }
 }
