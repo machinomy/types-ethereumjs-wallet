@@ -15,6 +15,6 @@
   },
   "homepage": "https://github.com/machinomy/types-ethereumjs-wallet#readme",
   "dependencies": {
-    "@types/node": "^9.6.2"
+    "@machinomy/types-safe-buffer": "^0.0.1"
   }
 }

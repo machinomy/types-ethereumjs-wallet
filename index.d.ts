@@ -1,5 +1,5 @@
 declare module "ethereumjs-wallet" {
-  import { Buffer } from "buffer";
+  import { Buffer } from "safe-buffer";
 
   class Wallet {
     static fromPrivateKey(key: Buffer): Wallet;
@@ -8,11 +8,13 @@ declare module "ethereumjs-wallet" {
     getAddressString(): string;
   }
 
+  namespace Wallet {}
+
   export = Wallet;
 }
 
 declare module "ethereumjs-wallet/hdkey" {
-  import Wallet = require("ethereumjs-wallet");
+  import * as Wallet from "ethereumjs-wallet"
 
   class EthereumHDKey {
     getWallet(): Wallet
