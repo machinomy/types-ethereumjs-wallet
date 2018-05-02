@@ -1,5 +1,6 @@
+import { Buffer } from "safe-buffer";
+
 declare module "ethereumjs-wallet" {
-  import { Buffer } from "safe-buffer";
 
   class Wallet {
     static fromPrivateKey(key: Buffer): Wallet;
@@ -20,5 +21,5 @@ declare module "ethereumjs-wallet/hdkey" {
     getWallet(): Wallet
   }
 
-  export function fromMasterSeed(seed: string): EthereumHDKey
+  export function fromMasterSeed(seed: Buffer): EthereumHDKey
 }
