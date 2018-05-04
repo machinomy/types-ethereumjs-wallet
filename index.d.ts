@@ -24,8 +24,13 @@ declare module 'ethereumjs-wallet/hdkey' {
   }
 
   class EthereumHDKey {
-    getWallet(): Wallet
+    privateExtendedKey (): string
+    publicExtendedKey (): string
+    derivePath (path: string): EthereumHDKey
+    deriveChild (index: string): EthereumHDKey
+    getWallet (): Wallet
   }
 
   export function fromMasterSeed(seed: Buffer): EthereumHDKey
+  export function fromExtendedKey(base58key: string): EthereumHDKey
 }
