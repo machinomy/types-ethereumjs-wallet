@@ -1,6 +1,5 @@
-import { Buffer } from 'safe-buffer'
-
 declare module 'ethereumjs-wallet' {
+  import { Buffer } from 'safe-buffer'
 
   class Wallet {
     static fromPrivateKey(key: Buffer): Wallet
@@ -15,6 +14,8 @@ declare module 'ethereumjs-wallet' {
 }
 
 declare module 'ethereumjs-wallet/hdkey' {
+  import { Buffer } from 'safe-buffer'
+
   class Wallet {
     static fromPrivateKey(key: Buffer): Wallet
     static fromV3(json: string, password: string): Wallet
