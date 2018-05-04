@@ -1,6 +1,6 @@
 {
   "name": "@machinomy/types-ethereumjs-wallet",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "TypeScript declaration for ethereumjs-wallet",
   "main": "index.d.ts",
   "types": "index.d.ts",
