@@ -27,7 +27,7 @@ declare module 'ethereumjs-wallet/hdkey' {
     privateExtendedKey (): string
     publicExtendedKey (): string
     derivePath (path: string): EthereumHDKey
-    deriveChild (index: string): EthereumHDKey
+    deriveChild (index: number): EthereumHDKey
     getWallet (): Wallet
   }
 
